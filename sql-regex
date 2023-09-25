@@ -1,0 +1,21 @@
+SELECT DISTINCT CITY 
+FROM STATION
+WHERE CITY REGEXP '^[aeiou]';
+
+'A%' --> start with
+  '%A' --> end width
+SELECT DISTINCT CITY 
+9
+FROM STATION
+10
+WHERE CITY LIKE 'A%' OR 
+11
+    CITY LIKE 'E%' OR 
+12
+    CITY LIKE 'I%' OR 
+13
+    CITY LIKE 'O%' OR 
+14
+    CITY LIKE 'U%';
+
+
