@@ -5,3 +5,17 @@ LIMIT 1;
 SELECT CITY, LENGTH(CITY) FROM STATION
 ORDER BY LENGTH(CITY) DESC, CITY
 LIMIT 1;
+
+In the clause ORDER BY LENGTH(CITY), CITY:
+
+LENGTH(CITY) is the primary sorting criterion. This means the result set is first ordered by the length of the city names.
+
+CITY is the secondary sorting criterion. This means that when there are multiple rows with the same length of city names, those rows will be further sorted alphabetically by the city name itself.
+
+To clarify with an example, consider the following cities:
+
+New York (length 7)
+Chicago (length 7)
+Atlanta (length 7)
+Boston (length 6)
+The ORDER BY LENGTH(CITY), CITY clause will sort these cities as:
