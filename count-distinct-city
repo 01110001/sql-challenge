@@ -1,0 +1,4 @@
+SELECT (COUNT(CITY) - COUNT(DISTINCT(CITY))) 
+FROM STATION;
+
+This query will first count all the CITY entries and then subtract the count of distinct CITY entries, giving you the number of duplicate CITY entries in the table.
